@@ -86,8 +86,8 @@ docs = [
 
 [[package]]
 name = "aind-clabe"
-version = "0.9.0rc3"
-source = { registry = "https://pypi.org/simple" }
+version = "0.9.0rc5"
+source = { git = "https://github.com/AllenNeuralDynamics/clabe?rev=improve-app-api#d69d903f9ba14c36fb0a4aff3ca22d4fa880df33" }
 dependencies = [
     { name = "aind-behavior-services" },
     { name = "gitpython" },
@@ -96,10 +96,6 @@ dependencies = [
     { name = "requests" },
     { name = "rich" },
     { name = "semver" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/66/de/71deda6dea733fbc5292da1b335dab6e7e0f18d53d67b651c85356004271/aind_clabe-0.9.0rc3.tar.gz", hash = "sha256:5acfa58b02372f662ee3871a9808f87b404fbbb7fbe13c011869b746e8511a68", size = 62470, upload-time = "2025-11-02T16:50:12.917Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/ea/84/c8182abe70f248727d8d7ccdd87e76a7f0ae368d2514719c4a3d3793f06d/aind_clabe-0.9.0rc3-py3-none-any.whl", hash = "sha256:1526ef1f5ef6d491162ce44aa469f3c9ede5209f0832150ce94ebb66e28c603c", size = 83428, upload-time = "2025-11-02T16:50:11.601Z" },
 ]
 
 [package.optional-dependencies]
@@ -177,7 +173,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "aind-behavior-vr-foraging", extras = ["launcher"], directory = "Aind.Behavior.VrForaging" },
-    { name = "aind-clabe", specifier = "==0.9.0rc3" },
+    { name = "aind-clabe", git = "https://github.com/AllenNeuralDynamics/clabe?rev=improve-app-api" },
 ]
 
 [package.metadata.requires-dev]

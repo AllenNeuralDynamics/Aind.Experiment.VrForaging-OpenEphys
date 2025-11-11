@@ -1,0 +1,7 @@
+data_dir: "C:/"
+allow_dirty: true
+xml_rpc_server:
+  token: test
+xml_rpc_client:
+  token: test
+  server_url: "http://127.0.0.1:8000"
